@@ -1,28 +1,114 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Offline p5.js Sketch</title>
-  
-  <!-- 1. Load the local p5 library -->
-  <script src="p5.min.js"></script>
-  
-  <!-- 2. Load your custom sketch -->
-  <script src="sketch.js"></script>
-  
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #222;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reflection and Symmetry Animation</title>
+
+    <!-- Load the local p5.js library -->
+    <script src="p5.min.js"></script>
+
+    <!-- Load your custom sketch -->
+    <script src="sketch.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 20px;
+            background-color: #222;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Animation at the top */
+        #sketch-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 30px;
+        }
+
+        /* Text content below animation */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: white;
+            margin-top: 25px;
+        }
+
+        a {
+            color: #80cfff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
+
 <body>
+
+    <!-- Animation -->
+    <div id="sketch-container"></div>
+
+    <!-- Text below animation -->
+    <div class="content">
+
+        <h2>Video Explanation</h2>
+
+        <p>
+            <a href="https://www.youtube.com/watch?v=XKGItjLJxlI"
+               target="_blank">
+                IT3 Final Drill Video Explanation
+            </a>
+        </p>
+
+        <h2>Sources & References</h2>
+
+        <ol>
+            <li>
+                <strong>p5.js Reference</strong><br>
+                <a href="https://p5js.org/reference/" target="_blank">
+                    https://p5js.org/reference/
+                </a><br>
+                Useful for learning coding functions.
+            </li>
+
+            <li>
+                <strong>Math Warehouse – Reflections Explorer</strong><br>
+                <a href="https://www.mathwarehouse.com/transformations/reflection/"
+                   target="_blank">
+                    https://www.mathwarehouse.com/transformations/reflection/
+                </a><br>
+                Helps explain how points and shapes are reflected across a line.
+            </li>
+
+            <li>
+                <strong>p5.js – Coordinates and Transformations</strong><br>
+                <a href="https://p5js.org/tutorials/coordinates-and-transformations/"
+                   target="_blank">
+                    https://p5js.org/tutorials/coordinates-and-transformations/
+                </a><br>
+                Explains coordinates and transformations using code.
+            </li>
+        </ol>
+
+    </div>
+
 </body>
 </html>
