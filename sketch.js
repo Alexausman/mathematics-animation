@@ -8,24 +8,20 @@ let speed = 2;
 let isPaused = false;
 
 function setup() {
-  let canvas = createCanvas(600, 400);
-canvas.parent("sketch-container");
+  createCanvas(600, 400);
 }
 
 function draw() {
   background(25, 35, 55);
 
-  // Center mirror line
   stroke(255);
   strokeWeight(2);
   line(300, 90, 300, 330);
 
-  // First object
   fill(255, 190, 80);
   noStroke();
   circle(dotX, dotY, 30);
 
-  // Mirror object
   fill(100, 220, 255);
   circle(mirrorX, dotY, 30);
 
