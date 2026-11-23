@@ -8,13 +8,12 @@
     <title>Reflection and Symmetry Animation</title>
 
     <script src="p5.min.js"></script>
-
     <script src="sketch.js"></script>
 
     <style>
         body {
             margin: 0;
-            padding: 30px 20px;
+            padding: 0;
             background-color: #222;
             color: white;
             font-family: Arial, sans-serif;
@@ -23,13 +22,21 @@
         #sketch-container {
             display: flex;
             justify-content: center;
-            align-items: center;
-            margin: 0 auto 30px;
+            align-items: flex-start;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #sketch-container canvas {
+            display: block;
+            margin: 0 auto;
         }
 
         .content {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
+            padding: 0 20px 30px;
             line-height: 1.6;
         }
 
@@ -72,7 +79,6 @@
             </a>
         </p>
 
-        <!-- Sources and References -->
         <h2>Sources & References</h2>
 
         <ol>
