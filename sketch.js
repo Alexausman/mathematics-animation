@@ -1,4 +1,3 @@
-
 let dotX = 0;
 let mirrorX = 600;
 
@@ -9,7 +8,7 @@ let isPaused = false;
 
 function setup() {
   let canvas = createCanvas(600, 400);
-canvas.parent("sketch-container");
+  canvas.parent('sketch-container');
 }
 
 function draw() {
@@ -54,9 +53,9 @@ function draw() {
 }
 
 function keyPressed() {
-
   if (keyCode == 32) {
     isPaused = !isPaused;
+    return false;
   }
 
   if (key == '+' || key == '=') {
