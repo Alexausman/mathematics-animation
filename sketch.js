@@ -7,8 +7,10 @@ let speed = 2;
 
 let isPaused = false;
 
-let canvas = createCanvas(600, 400);
+function setup() {
+  let canvas = createCanvas(600, 400);
 canvas.parent("sketch-container");
+}
 
 function draw() {
   background(25, 35, 55);
